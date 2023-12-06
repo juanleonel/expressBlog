@@ -1,0 +1,71 @@
+.post-container {
+  display: flex;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+
+.post-information {
+  flex: 1 0 400px;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.post-detail-cointainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.image {
+  margin: 1%;
+}
+
+.comments-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.comment {
+  padding: 0px;
+  margin-bottom: 5px;
+}
+
+.coment-date {
+  font-size: 11px;
+}
+
+.date {
+  font-size: 11px;
+}
+
+/* Estilos generales para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .image {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .image {
+    width: 98% !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .image {
+    max-width: 100%;
+    height: auto; 
+  }
+}

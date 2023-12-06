@@ -1,6 +1,6 @@
 async function doAuth(userName, password) {
   const defaultEmail = 'juan@correo.com'
-  const defaultPassword = '12343'
+  const defaultPassword = '12345'
   if (userName === defaultEmail && password === defaultPassword) {
     return Promise.resolve({
       userName,

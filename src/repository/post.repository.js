@@ -6,11 +6,14 @@ async function test() {
   return rows
 }
 
-async function get() {
-  
+async function getPosts() {
+  const sql = 'SELECT * FROM pots'
+  const  [rows, d] = await database().query(sql)
+
+  return rows
 }
 
 module.exports = {
-  get,
+  getPosts,
   test
 }

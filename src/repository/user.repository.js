@@ -7,7 +7,7 @@ const { userToModel, usersToArrayModel } = require('../utils/user.mapper')
  * @description Get users with status active in true or 1.
  * @returns List of users.
  */
-async function getUsers() {
+async function getAllUsers() {
   const [rows] = await database().query('SELECT * FROM users WHERE isActive = 1')
 
   return usersToArrayModel(rows)
@@ -97,7 +97,7 @@ async function deleteUserById(id) {
 
 module.exports = {
   deleteUserById,
-  getUsers,
+  getAllUsers,
   getUserById,
   insertUser,
   updateUser

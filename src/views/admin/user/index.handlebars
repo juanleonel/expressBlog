@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div id="alert-message" class="alert alert-success" role="alert">
+      User post has been created successfully
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-md-12 col-sm-12">
+      <a href="/admin/user/add" class="btn btn-primary">Add user</a>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            {{#each columns}}
+              <th scope="col"> {{ label }} </th>
+            {{/each}}
+          </tr>
+        </thead>
+        <tbody>
+            {{#each users}}
+              <tr>
+                  <th> {{ userId }} </th>
+                  <th> {{ name }} </th>
+                  <th> {{ lastName }} </th>
+                  <th> {{ email }} </th>
+                  <th> {{ isActive }} </th>
+              </tr>
+            {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

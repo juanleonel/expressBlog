@@ -29,7 +29,7 @@ function parseNumber(value) {
 }
 
 function isEmpty(value) {
-  if (value === undefined || value === null || (typeof value === 'string' || value?.trim() === '')) {
+  if (value === undefined || value === null || (typeof value === 'string' && value?.trim() === '')) {
     return true
   }
 
